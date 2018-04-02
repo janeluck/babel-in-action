@@ -10,9 +10,17 @@ class B extends A {
 
 }
 
-function c() {
-    
+function C(xx) {
+    this.a = xx
 }
-class D extends Component{
 
+
+
+class F extends C{
+    constructor(xx){
+        super(xx)
+        console.log(this.a)
+    }
 }
+
+new F('22')
