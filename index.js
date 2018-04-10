@@ -2,8 +2,8 @@ import {Component} from 'react'
 import * as babylon from 'babylon'
 
 class A {
-    constructor(){
-
+    constructor(a){
+      this.a = a
     }
 }
 class B extends A {
@@ -41,3 +41,4 @@ const code = `function square(n){
     return n * n
 }`
 console.log(babylon.parse(code))
+
