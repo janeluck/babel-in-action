@@ -5,8 +5,10 @@ function a() {
 
     try {
         return 1
+    } catch (e) {
+        console.log(2)
     } finally {
-        console.log(11)
+        console.log(3)
     }
 }
 
